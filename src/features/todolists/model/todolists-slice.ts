@@ -11,7 +11,7 @@ export const changeTodolistFilterAC = createAction<{ id: string; filter: FilterV
 
 const initialState: Todolist[] = []
 
-export const todolistsReducer = createReducer(initialState, (builder) => {
+export const todolistsSlice = createReducer(initialState, (builder) => {
   builder
     .addCase(deleteTodolistAC, (state, action) => {
       const index = state.findIndex((todolist) => todolist.id === action.payload.id)
