@@ -2,7 +2,7 @@ import {createSlice, nanoid} from "@reduxjs/toolkit"
 import {createTodolistAC, deleteTodolistAC} from "@/features/todolists/model/todolists-reducer.ts";
 
 export const tasksSlice = createSlice({
-    name: 'todolists',
+    name: 'tasks',
     initialState: {} as TasksState,
     reducers: (create) => {
         return {
