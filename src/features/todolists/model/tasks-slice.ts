@@ -12,7 +12,7 @@ export const changeTaskTitleAC = createAction<{ todolistId: string; taskId: stri
 
 const initialState: TasksState = {}
 
-export const tasksReducer = createReducer(initialState, (builder) => {
+export const tasksSlice = createReducer(initialState, (builder) => {
   builder
     .addCase(deleteTaskAC, (state, action) => {
       const tasks = state[action.payload.todolistId]
